@@ -2,6 +2,7 @@
 
 // Autoload every custom WordPress files/directories here
 $directories = [
+    'acf/',
     'cpt/',
 ];
 

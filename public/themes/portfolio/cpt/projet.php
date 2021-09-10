@@ -4,9 +4,9 @@
 function create_projets_post_type()
 {
     $args = array(
-        'label' => __('Projet', 'text_domain'),
+        'label' => __('Projets', 'text_domain'),
         'description' => __('Liste de projets de développement web', 'text_domain'),
-        'supports' => array('title', 'editor'),
+        'supports' => array('title'),
         'hierarchical' => false,
         'public' => true,
         'show_ui' => true,
@@ -19,6 +19,7 @@ function create_projets_post_type()
         'has_archive' => true,
         'exclude_from_search' => false,
         'publicly_queryable' => true,
+        'menu_icon' => 'dashicons-portfolio',
         'capability_type' => 'page',
     );
     register_post_type('project', $args);
