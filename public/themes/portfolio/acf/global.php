@@ -27,6 +27,7 @@ add_action('acf/init', function () {
         'location' => [
             Location::if('post_type', '==', 'project'),
             Location::if('post_type', '==', 'page'),
+            Location::if('page_template.php', '==', 'page-about.php'),
         ],
     ]);
 });
