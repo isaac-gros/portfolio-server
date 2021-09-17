@@ -15,7 +15,8 @@
         "wpackagist-plugin/acf-to-rest-api": "^3.3",
         "wpackagist-plugin/advanced-custom-fields": "^5.10",
         "wpackagist-plugin/classic-editor": "^1.6",
-        "wpackagist-plugin/hide-updates": "^1.1"
+        "wpackagist-plugin/hide-updates": "^1.1",
+        "wpackagist-plugin/two-factor-authentication": "^1.10"
     },
     "config": {
         "optimize-autoloader": true,
