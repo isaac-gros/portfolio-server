@@ -1,10 +1,10 @@
 <?php
 
 // Register Custom Post Type
-function create_realisations_post_type()
+function create_creations_post_type()
 {
     $args = array(
-        'label' => __('Réalisations', 'text_domain'),
+        'label' => __('Créations', 'text_domain'),
         'description' => __('Créations diverses (hors développement web)', 'text_domain'),
         'supports' => array('title'),
         'hierarchical' => false,
@@ -22,6 +22,6 @@ function create_realisations_post_type()
         'menu_icon' => 'dashicons-art',
         'capability_type' => 'page',
     );
-    register_post_type('realisations', $args);
+    register_post_type('creations', $args);
 }
-add_action('init', 'create_realisations_post_type', 0);
+add_action('init', 'create_creations_post_type', 0);

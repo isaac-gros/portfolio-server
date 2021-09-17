@@ -1,6 +1,7 @@
 <?php
 
 use WordPlate\Acf\Fields\PageLink;
+use WordPlate\Acf\Fields\Image;
 use WordPlate\Acf\Location;
 
 add_action('acf/init', function () {
@@ -10,12 +11,15 @@ add_action('acf/init', function () {
 
     // Champs pour la page "À propos"
     register_extended_field_group([
-        'title' => 'Réalisations mises en avant',
+        'title' => 'Présentation',
         'style' => 'default',
         'menu_order' => 2,
         'fields' => [
-            PageLink::make('Réalisations')
-                ->postTypes(['realisations'])
+            Image::make('Image profil')
+                ->instructions("L'image de présentation pour la page"),
+            PageLink::make('Créations')
+                ->instructions("Une liste de créations affichés sur la page")
+                ->postTypes(['creations'])
                 ->allowArchives(false)
                 ->allowMultiple()
         ],
